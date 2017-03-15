@@ -1,0 +1,93 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+
+        <ion-title>Dashboard</ion-title>
+
+        <ion-buttons end>
+            <button  (click)="showSettings()" ion-button icon-only>
+                <ion-icon name="settings"></ion-icon>
+            </button>
+        </ion-buttons>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="grid-full">
+  <ion-row>
+    <ion-col>
+      <button class = "myButton" ion-button block outline>
+        <div>
+          <ion-icon class = "icons" name="partly-sunny"></ion-icon>
+          <br>Wetter
+        </div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button class = "myButton" ion-button block outline>
+      <div>
+        <ion-icon class = "icons" name="pulse"></ion-icon>
+        <br>
+        <label>Remote</label>
+      </div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button class = "myButton" ion-button block outline>
+      <div>
+        <ion-icon class = "icons" name="musical-notes"></ion-icon>
+        <br>
+        <label>Musik</label>
+      </div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button class = "myButton" ion-button block outline>
+      <div>
+        <ion-icon class = "icons" name="bulb"></ion-icon>
+        <br>
+        <label>Licht</label>
+      </div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button class = "myButton" ion-button block outline>
+      <div>
+        <ion-icon class = "icons" name="thermometer"></ion-icon>
+        <br>
+        <label>Klima</label>
+      </div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button class = "myButton" ion-button block outline>
+      <div>
+        <ion-icon class = "icons" name="print"></ion-icon>
+        <br>
+        <label>3D Drucker</label>
+      </div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button class = "myButton" ion-button block outline>
+      <div>
+        <ion-icon class = "icons" name="podium"></ion-icon>
+        <br>
+        <label>Statistiken</label>
+      </div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button class = "myButton" ion-button block outline>
+      <div>
+        <ion-icon class = "icons" name="albums"></ion-icon>
+        <br>
+        <label>Makros</label>
+      </div>
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
