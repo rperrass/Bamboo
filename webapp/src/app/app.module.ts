@@ -12,6 +12,11 @@ import { MacrosPage } from '../pages/macros/macros';
 import { StatisticsPage } from '../pages/statistics/statistics';
 import { SettingsPage } from '../pages/settings/settings';
 
+import {ChartsModule} from '../../node_modules/ng2-charts/charts/charts';
+import '../../node_modules/chart.js/dist/Chart.bundle.min.js';
+
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -24,10 +29,11 @@ import { SettingsPage } from '../pages/settings/settings';
     LightPage,
     MacrosPage,
     StatisticsPage,
-    SettingsPage
+    SettingsPage,
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ChartsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

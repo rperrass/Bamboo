@@ -21,4 +21,25 @@
 
 <ion-content padding>
 
+
+    <ion-card-header>
+      Wohnzimmer
+    </ion-card-header>
+    <ion-card-content>
+      <canvas baseChart [datasets]="chartData" [labels]="chartLabels" [options]="chartOptions" [legend]="chartLegend"
+        [chartType]="chartType"></canvas>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="thermometer" item-left></ion-icon>
+            aktuelle Temperatur:
+          <ion-note item-right>25 °C</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="water" item-left></ion-icon>
+            aktuelle Feuchtigkeit:
+          <ion-note item-right>40 %</ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  
 </ion-content>
